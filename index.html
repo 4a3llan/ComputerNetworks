@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>أهم 40 سؤال اختيار من متعدد (MCQ)</title>
+
+  <!-- Cairo font (Google Fonts) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Hero header -->
+  <header>
+    <div class="tag">computer network </div>
+    <h1>أهم 40 سؤال اختيار من متعدد <span dir="ltr">(MCQ)</span></h1>
+    <p>   تنويه : الأسئلة مستخرجة من ملفات الدكتور باستخدام AI وتمت مراجعتها، بس وارد يكون فيها بعض الأخطاء البسيطة. </p>
+  </header>
+
+  <div class="wrap">
+
+    <!-- Sticky toolbar: search, filters, progress, question chips -->
+    <div class="bar">
+      <div class="row">
+        <input type="search" id="search" placeholder="ابحث في الأسئلة والشرح...">
+        <button data-filter="all" class="on">الكل</button>
+        <button data-filter="1">القسم الأول</button>
+        <button data-filter="2">القسم الثاني</button>
+        <button id="showAll">إظهار كل الإجابات</button>
+        <button id="reset">إعادة</button>
+      </div>
+      <div class="prog"><i id="progress"></i></div>
+      <div class="stat" id="status"></div>
+      <div class="chips" id="chips"></div>
+    </div>
+
+    <!-- Questions are rendered here by script.js -->
+    <div id="list"></div>
+
+    <footer>Prepared by<b>Eng. Ibrahim Essam</b></footer>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
